@@ -1,0 +1,90 @@
+:root{
+    --BOXSIZE:105px;
+    --bobo:95px;
+    --FONT:60px;
+    --GREY:rgb(212, 212, 212);
+    --GREEN:rgb(22, 222, 162);
+    --BLUE:rgb(212, 212, 212);
+
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    align-items: center;
+}
+h1{
+    margin: 0px;
+}
+
+.gameboard{
+    margin-top: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    width: calc((var(--BOXSIZE)*3));
+    gap: 5px;
+    
+}
+
+.box-container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.box{
+    margin: 1px;
+    height: var(--bobo);
+    width:var(--bobo);
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgb(212, 212, 212);
+
+
+    font-size:var(--FONT);
+    font-family:'Segoe UI', sans-serif;
+    
+    padding: 0px;
+    cursor:pointer;
+}
+
+.box:hover {
+    margin: 0;
+    border: 5px solid rgb(43, 226, 73);
+    
+}
+
+
+.move{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+}
+
+.reset_button{
+    height: 30px;
+    border: none;
+    background-color: rgb(23, 93, 153);
+    color: white;
+    font-size: large;
+    border-radius: 4px;
+}
+.reset_button:hover{
+    background-color: rgba(61, 138, 206, 0.9);
+}
